@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import "@fontsource-variable/onest";
+
 
 const Hero = () => {
   return (
@@ -10,25 +10,20 @@ const Hero = () => {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-6xl md:text-7xl font-extrabold mb-4 leading-tight tracking-tight"
+        className="text-6xl md:text-5xl mb-5"
       >
-        We Build <span className="text-purple-500">Imaginations</span>
+        We Build 
+        <div className="mt-5 mb-5">
+        <span className="text-purple-500 text-7xl tagline mt-5">Imaginations</span>
+        </div>
       </motion.h1>
 
-      <motion.p
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, duration: 0.8 }}
-        className="text-lg md:text-xl text-gray-400 max-w-2xl mb-10"
-      >
-        Turning ideas into powerful digital experiences — websites, chatbots,
-        and automation that transform your vision into reality.
-      </motion.p>
+  
 
       <motion.button
         whileHover={{ scale: 1.08 }}
         whileTap={{ scale: 0.98 }}
-        className="px-10 py-4 bg-purple-500 text-white rounded-full shadow-lg hover:bg-purple-600 transition text-lg font-semibold"
+        className="px-10 py-4 bg-purple-500 text-white rounded-xl shadow-lg hover:bg-purple-600 transition text-lg font-semibold mt-10"
       >
         Let’s Collaborate
       </motion.button>

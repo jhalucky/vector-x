@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import "@fontsource-variable/onest";
 
 interface NavbarProps {
   refs: {
@@ -17,7 +16,7 @@ const Navbar = ({ refs }: NavbarProps) => {
       initial={{ y: -20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="w-full py-4 px-6 text-white font-[Onest_Variable] bg-black"
+      className="w-full py-4 px-6 text-white bg-black"
     >
       <div className="mx-auto flex justify-between items-center">
         <div className="ml-2 md:ml-6 mt-3">
@@ -25,9 +24,9 @@ const Navbar = ({ refs }: NavbarProps) => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-xl md:text-3xl font-bold tracking-tight text-purple-500"
+            className="text-xl md:text-3xl text-purple-500 logo"
             >
-            MarketEase
+            VECTOR-X
             </motion.h1>
             </div>
 
