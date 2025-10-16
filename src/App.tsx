@@ -2,6 +2,7 @@ import { useRef } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
+import Services from "./components/Services";
 import Pricing from "./components/Pricing";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
@@ -21,12 +22,13 @@ function App() {
       <main>
         <Hero />
         <Features />
+        <Services />
         <Pricing />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
       </main>
-      <footer className="text-center py-8 border-t border-gray-700 text-sm">
-        © {new Date().getFullYear()} MarketEase. All rights reserved.
+      <footer className="text-center py-8 text-sm">
+        © {new Date().getFullYear()} VECTOR-X. All rights reserved.
       </footer>
     </div>
   );
