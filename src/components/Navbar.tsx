@@ -4,9 +4,14 @@ import gsap from "gsap";
 
 interface NavbarProps {
   refs: {
+    homeRef: React.RefObject<HTMLDivElement | null>;
+    featuresRef: React.RefObject<HTMLDivElement | null>;
+    pricingRef: React.RefObject<HTMLDivElement | null>;
+    testimonialsRef: React.RefObject<HTMLDivElement | null>;
     contactRef: React.RefObject<HTMLDivElement | null>;
   };
 }
+
 
 const Navbar = ({ refs }: NavbarProps) => {
   const navBgRef = useRef<HTMLDivElement | null>(null);
@@ -26,7 +31,7 @@ const Navbar = ({ refs }: NavbarProps) => {
     return () => ctx.revert();
   }, []);
 
-  const scrollToSection = (ref: React.RefObject<HTMLDivElement>) => {
+  const scrollToSection = (ref: React.RefObject<HTMLDivElement | null>) => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
