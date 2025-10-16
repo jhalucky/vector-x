@@ -8,7 +8,7 @@ const features = [
 ];
 
 const Features = () => {
-  const bgRef = useRef<HTMLDivElement>(null);
+  const bgRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {

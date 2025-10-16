@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import gsap from "gsap";
 
 const Hero = () => {
-  const bgRef = useRef<HTMLDivElement>(null);
+  const bgRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {

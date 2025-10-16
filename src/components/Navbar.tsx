@@ -9,7 +9,7 @@ interface NavbarProps {
 }
 
 const Navbar = ({ refs }: NavbarProps) => {
-  const navBgRef = useRef<HTMLDivElement>(null);
+  const navBgRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
