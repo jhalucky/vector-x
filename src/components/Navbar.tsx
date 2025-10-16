@@ -4,7 +4,7 @@ import gsap from "gsap";
 
 interface NavbarProps {
   refs: {
-    contactRef: React.RefObject<HTMLDivElement>;
+    contactRef: React.RefObject<HTMLDivElement | null>;
   };
 }
 
