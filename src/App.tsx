@@ -8,11 +8,11 @@ import Pricing from "./components/Pricing";
 import Contact from "./components/Contact";
 
 function App() {
-  const homeRef = useRef<HTMLDivElement>(null);
-  const featuresRef = useRef<HTMLDivElement>(null);
-  const pricingRef = useRef<HTMLDivElement>(null);
-  const testimonialsRef = useRef<HTMLDivElement>(null);
-  const contactRef = useRef<HTMLDivElement>(null);
+  const homeRef = useRef<HTMLDivElement | null>(null);
+  const featuresRef = useRef<HTMLDivElement| null>(null);
+  const pricingRef = useRef<HTMLDivElement| null>(null);
+  const testimonialsRef = useRef<HTMLDivElement | null>(null);
+  const contactRef = useRef<HTMLDivElement | null>(null);
 
   return (
     <div className="bg-black text-white">
